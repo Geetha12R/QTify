@@ -7,7 +7,7 @@ import Grid  from "@mui/material/Grid";
 
 function Section({title,api}) {
   const [albums, setAlbums] = useState([]);
-  const [showAll, setShowAll] = useState(false);
+  const [showAll, setShowAll] = useState(true);
 
   useEffect(() => {
     axios
