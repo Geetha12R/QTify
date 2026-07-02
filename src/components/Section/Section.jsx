@@ -9,9 +9,9 @@ import Tab from "@mui/material/Tab";
 
 import Carousel from "../Carousel/Carousel";
 
-function Section({ title, api, initialShowAll, type = "album" }) {
+function Section({ title, api, type = "album" }) {
   const [albums, setAlbums] = useState([]);
-  const [showAllAlbums, setShowAllAlbums] = useState(initialShowAll);
+  const [showAllAlbums, setShowAllAlbums] = useState(false);
   const [genres, setGenres] = useState([]);
   const [selectedGenre, setSelectedGenre] = useState("all");
 

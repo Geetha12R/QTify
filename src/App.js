@@ -11,13 +11,11 @@ const sections =
   {
     title: "Top Albums",
     url: "/albums/top",
-    showAll: true,
     type: "album",
   },
   {
     title: "New Albums",
     url: "/albums/new",
-    showAll: false,
     type: "album",
   },
   {
@@ -34,8 +32,8 @@ function App() {
       {sections.map((section)=>
       <Section key={section.title} 
       title={section.title} api={section.url} 
-      type={section.type}
-      initialShowAll={section.showAll}/>)}
+      type={section.type}/>
+      )}
     </div>
   );
 }
