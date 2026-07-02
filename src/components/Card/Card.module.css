@@ -1,0 +1,49 @@
+.card {
+  width: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: transparent;
+}
+
+/* image */
+.imageContainer {
+  width: 100%;
+  height: 200px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* white section under image */
+.metaSection {
+  background: white;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start; /* left aligned */
+}
+
+/* black chip */
+.chip {
+  background-color: black !important;
+  color: white !important;
+}
+
+.chip :global(.MuiChip-label) {
+  color: white;
+}
+
+/* title below card */
+.content {
+  margin-top: 8px;
+}
+
+.title {
+  font-size: 14px;
+  /* font-weight: 500; */
+  color: #fff;
+  text-align: left;
+}
