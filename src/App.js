@@ -6,15 +6,36 @@ import Section from './components/Section/Section';
 export const config = {
   endpoint: `https://qtify-backend.labs.crio.do`,
 };
-const sections =[{title:"Top Albums", url:"/albums/top"},
-  {title:"New Albums", url:"/albums/new"}
-]
+const sections =
+[
+  {
+    title: "Top Albums",
+    url: "/albums/top",
+    showAll: true,
+    type: "album",
+  },
+  {
+    title: "New Albums",
+    url: "/albums/new",
+    showAll: false,
+    type: "album",
+  },
+  {
+    title: "Songs",
+    url: "/songs",
+    type: "song",
+  },
+];
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Hero />
-      {sections.map((section)=><Section title={section.title} api={section.url}/>)}
+      {sections.map((section)=>
+      <Section key={section.title} 
+      title={section.title} api={section.url} 
+      type={section.type}
+      initialShowAll={section.showAll}/>)}
     </div>
   );
 }

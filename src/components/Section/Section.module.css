@@ -32,3 +32,17 @@
   gap: 16px;
   flex-wrap: wrap;
 }
+
+.tab {
+  color: white !important;
+  text-transform: none;
+  font-weight: 500;
+}
+.indicator {
+  background-color: #34c94b !important; 
+  height: 3px;
+}
+:global(.MuiTabs-root) {
+  min-height: unset !important;
+  margin-bottom: 20px; 
+}
